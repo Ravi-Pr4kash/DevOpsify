@@ -1,0 +1,18 @@
+replicaCount: 1
+
+image:
+  repository: raviiprakashh/go-app
+  pullPolicy: IfNotPresent
+  tag: "10008891570"
+
+
+ingress:
+  enabled: false
+  className: ""
+  annotations: {}
+
+  hosts:
+    - host: chart-example.local
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
