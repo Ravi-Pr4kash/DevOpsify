@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: raviiprakashh/go-app
   pullPolicy: IfNotPresent
-  tag: "16933840797"
+  tag: "bd22b01d9c278e10752db8fa6cdfc903c91b6f42"
 
 
 ingress:
