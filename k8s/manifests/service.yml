@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
+<<<<<<< HEAD
   name: go-app
   labels:
     app: go-app
@@ -12,3 +13,13 @@ spec:
   selector:
     app: go-app
   type: NodePort
+=======
+  name: go-web-app-lb
+spec:
+  type: LoadBalancer
+  selector:
+    app: go-web-app
+  ports:
+    - port: 80
+      targetPort: 8080
+>>>>>>> 8fdd827 (updated)
